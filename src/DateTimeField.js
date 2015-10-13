@@ -333,6 +333,7 @@ export default class DateTimeField extends Component {
                   addMinute={this.addMinute}
                   addMonth={this.addMonth}
                   addYear={this.addYear}
+                  calendarWeeks={this.props.calendarWeeks}
                   daysOfWeekDisabled={this.props.daysOfWeekDisabled}
                   maxDate={this.props.maxDate}
                   minDate={this.props.minDate}

@@ -14,6 +14,7 @@ export default class DateTimePickerDate extends Component {
       PropTypes.string,
       PropTypes.number
     ]),
+    calendarWeeks: PropTypes.bool,
     daysOfWeekDisabled: PropTypes.array,
     setSelectedDate: PropTypes.func.isRequired,
     subtractYear: PropTypes.func.isRequired,
@@ -83,6 +84,7 @@ export default class DateTimePickerDate extends Component {
       return (
       <DateTimePickerDays
             addMonth={this.props.addMonth}
+            calendarWeeks={this.props.calendarWeeks}
             daysOfWeekDisabled={this.props.daysOfWeekDisabled}
             maxDate={this.props.maxDate}
             minDate={this.props.minDate}

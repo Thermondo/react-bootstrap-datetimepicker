@@ -19,6 +19,7 @@ export default class DateTimePicker extends Component {
       PropTypes.number
     ]),
     mode: PropTypes.oneOf([Constants.MODE_DATE, Constants.MODE_DATETIME, Constants.MODE_TIME]),
+    calendarWeeks: PropTypes.bool,
     daysOfWeekDisabled: PropTypes.array,
     setSelectedDate: PropTypes.func.isRequired,
     subtractYear: PropTypes.func.isRequired,
@@ -49,6 +50,7 @@ export default class DateTimePicker extends Component {
               addDecade={this.props.addDecade}
               addMonth={this.props.addMonth}
               addYear={this.props.addYear}
+              calendarWeeks={this.props.calendarWeeks}
               daysOfWeekDisabled={this.props.daysOfWeekDisabled}
               maxDate={this.props.maxDate}
               minDate={this.props.minDate}
