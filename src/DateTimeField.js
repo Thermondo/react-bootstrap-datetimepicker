@@ -64,6 +64,11 @@ export default class DateTimeField extends Component {
       inputValue: typeof this.props.defaultText !== "undefined" ? this.props.defaultText : moment(this.props.dateTime, this.props.format, true).format(this.resolvePropsInputFormat())
   }
 
+  componentWillMount = () => {
+    if (this.props.locale)
+      moment.locale(this.props.locale)
+  }
+
   componentWillReceiveProps = (nextProps) => {
     let state = {};
     if (nextProps.inputFormat !== this.props.inputFormat) {
