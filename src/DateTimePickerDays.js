@@ -27,7 +27,7 @@ export default class DateTimePickerDays extends Component {
     month = this.props.viewDate.month();
     prevMonth = this.props.viewDate.clone().subtract(1, "months");
     days = prevMonth.daysInMonth();
-    prevMonth.date(days).startOf("week");
+    prevMonth.date(days).startOf("isoweek");
     nextMonth = moment(prevMonth).clone().add(42, "d");
     minDate = this.props.minDate ? this.props.minDate.clone().subtract(1, "days") : this.props.minDate;
     maxDate = this.props.maxDate ? this.props.maxDate.clone() : this.props.maxDate;
@@ -62,7 +62,7 @@ export default class DateTimePickerDays extends Component {
         cells.push(<td key={prevMonth.year() + "-" + prevMonth.week()} className="cw">{prevMonth.week()}</td>);
       }
       cells.push(<td key={prevMonth.month() + "-" + prevMonth.date()} className={classnames(classes)} onClick={this.props.setSelectedDate}>{prevMonth.date()}</td>);
-      if (prevMonth.weekday() === moment().endOf("week").weekday()) {
+      if (prevMonth.weekday() === moment().endOf("isoweek").weekday()) {
         row = <tr key={prevMonth.month() + "-" + prevMonth.date()}>{cells}</tr>;
         html.push(row);
         cells = [];
@@ -88,8 +88,6 @@ export default class DateTimePickerDays extends Component {
             <tr>
               {this.props.calendarWeeks ? <th></th> : null}
 
-              <th className="dow">Su</th>
-
               <th className="dow">Mo</th>
 
               <th className="dow">Tu</th>
@@ -101,6 +99,8 @@ export default class DateTimePickerDays extends Component {
               <th className="dow">Fr</th>
 
               <th className="dow">Sa</th>
+
+              <th className="dow">Su</th>
             </tr>
           </thead>
 
