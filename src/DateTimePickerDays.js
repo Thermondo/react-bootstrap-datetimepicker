@@ -88,19 +88,10 @@ export default class DateTimePickerDays extends Component {
             <tr>
               {this.props.calendarWeeks ? <th></th> : null}
 
-              <th className="dow">Mo</th>
+              {[1, 2, 3, 4, 5, 6, 7].map(function(day) {
+                return <th className="dow">{moment().isoWeekday(day).format('dd')}</th>;
+              })}
 
-              <th className="dow">Tu</th>
-
-              <th className="dow">We</th>
-
-              <th className="dow">Th</th>
-
-              <th className="dow">Fr</th>
-
-              <th className="dow">Sa</th>
-
-              <th className="dow">Su</th>
             </tr>
           </thead>
 
