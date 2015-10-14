@@ -14,7 +14,8 @@ export default class DateTimeField extends Component {
     mode: Constants.MODE_DATETIME,
     onChange: (x) => {
       console.log(x);
-    }
+    },
+    onClear: () => {}
   }
 
   resolvePropsInputFormat = () => {
@@ -35,6 +36,7 @@ export default class DateTimeField extends Component {
       PropTypes.number
     ]),
     onChange: PropTypes.func,
+    onClear: PropTypes.func,
     format: PropTypes.string,
     inputProps: PropTypes.object,
     inputFormat: PropTypes.string,
@@ -302,6 +304,14 @@ export default class DateTimeField extends Component {
     }
   }
 
+  onClear = () => {
+    this.setState({
+      inputValue: ""
+    }, function() {
+      return this.props.onClear();
+    });
+  }
+
   closePicker = () => {
     let style = this.state.widgetStyle;
     style.left = -9999;
@@ -366,6 +376,7 @@ export default class DateTimeField extends Component {
             />
             <div className="input-group date" ref="datetimepicker">
               <input type="text" className="form-control" onChange={this.onChange} value={this.state.inputValue} {...this.props.inputProps}/>
+              <span className="input-group-addon" onClick={this.onClear}><Glyphicon glyph="remove" /></span>
               <span className="input-group-addon" onClick={this.onClick} onBlur={this.onBlur} ref="dtpbutton"><Glyphicon glyph={this.state.buttonIcon} /></span>
             </div>
           </div>
