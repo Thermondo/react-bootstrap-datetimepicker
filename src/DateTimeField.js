@@ -41,6 +41,10 @@ export default class DateTimeField extends Component {
     inputProps: PropTypes.object,
     inputFormat: PropTypes.string,
     defaultText: PropTypes.string,
+    defaultValue: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number
+    ]),
     mode: PropTypes.oneOf([Constants.MODE_DATE, Constants.MODE_DATETIME, Constants.MODE_TIME]),
     minDate: PropTypes.object,
     maxDate: PropTypes.object,
@@ -67,8 +71,16 @@ export default class DateTimeField extends Component {
   }
 
   componentWillMount = () => {
+    if (this.props.defaultValue) {
+      this.setState({
+        viewDate: moment(this.props.defaultValue, this.props.format, true).startOf("month"),
+        selectedDate: moment(this.props.defaultValue, this.props.format, true),
+        inputValue: moment(this.props.defaultValue, this.props.format, true).format(this.resolvePropsInputFormat())
+      });
+    }
+
     if (this.props.locale)
-      moment.locale(this.props.locale)
+      moment.locale(this.props.locale);
   }
 
   componentWillReceiveProps = (nextProps) => {
