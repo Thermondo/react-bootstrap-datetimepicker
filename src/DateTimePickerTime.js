@@ -75,15 +75,11 @@ export default class DateTimePickerTime extends Component {
             </tr>
 
             <tr>
-              <td><span className="timepicker-hour" onClick={this.showHours}>{this.props.selectedDate.format("h")}</span></td>
+              <td><span className="timepicker-hour" onClick={this.showHours}>{this.props.selectedDate.format("H")}</span></td>
 
               <td className="separator">:</td>
 
               <td><span className="timepicker-minute" onClick={this.showMinutes}>{this.props.selectedDate.format("mm")}</span></td>
-
-              <td className="separator"></td>
-
-              <td><button className="btn btn-primary" onClick={this.props.togglePeriod} type="button">{this.props.selectedDate.format("A")}</button></td>
             </tr>
 
             <tr>
