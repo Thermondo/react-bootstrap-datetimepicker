@@ -1,7 +1,9 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import TestUtils from "react-addons-test-utils";
+
 jest.dontMock("moment");
-import React from "react/addons";
 jest.dontMock("../DateTimeField.js");
-const { TestUtils } = React.addons;
 
 describe("DateTimeField", function() {
   const moment = require("moment");
@@ -15,8 +17,16 @@ describe("DateTimeField", function() {
    it("shows the right date for a given dateTime and inputFormat", function() {
      const component = TestUtils.renderIntoDocument(<DateTimeField dateTime={happyDate.format("x")} />);
      const input = TestUtils.findRenderedDOMComponentWithTag(component, "input");
-     expect(input.getDOMNode().value).toBe("06/05/90 7:30 AM");
+     expect(input.value).toBe("06/05/90 7:30 AM");
     });
+
+    it("allows a custom zIndex to be applied to overlay", function() {
+      const component = TestUtils.renderIntoDocument(<DateTimeField zIndex={1234} />);
+	  const input = TestUtils.findRenderedDOMComponentWithClass(component, "input-group-addon");
+	  TestUtils.Simulate.click(input);
+      const overlay = TestUtils.findRenderedDOMComponentWithClass(component, "bootstrap-datetimepicker-overlay");
+      expect(ReactDOM.findDOMNode(overlay).style.zIndex).toBe('1234');
+     });
 
   });
 
@@ -41,25 +51,25 @@ describe("DateTimeField", function() {
     it("changes the displayed date when dateTime changes", function() {
       const Parent = createParent();
       const input = TestUtils.findRenderedDOMComponentWithTag(Parent, "input");
-      expect(input.getDOMNode().value).toBe("06/05/90 7:30 AM");
+      expect(input.value).toBe("06/05/90 7:30 AM");
       Parent.setState({dateTime: moment("1981-06-04 05:45").format("x")});
-      expect(input.getDOMNode().value).toBe("06/04/81 5:45 AM");
+      expect(input.value).toBe("06/04/81 5:45 AM");
      });
 
     it("changes the displayed format when inputFormat changes", function() {
       const Parent = createParent();
       const input = TestUtils.findRenderedDOMComponentWithTag(Parent, "input");
-      expect(input.getDOMNode().value).toBe("06/05/90 7:30 AM");
+      expect(input.value).toBe("06/05/90 7:30 AM");
       Parent.setState({inputFormat: "x"});
-      expect(input.getDOMNode().value).toBe(happyDate.format("x"));
+      expect(input.value).toBe(happyDate.format("x"));
      });
 
     it("doesn't change the defaultText if dateTime didn't change", function() {
       const Parent = createParent({defaultText: "Pick a date"});
       const input = TestUtils.findRenderedDOMComponentWithTag(Parent, "input");
-      expect(input.getDOMNode().value).toBe("Pick a date");
+      expect(input.value).toBe("Pick a date");
       Parent.setState({});
-      expect(input.getDOMNode().value).toBe("Pick a date");
+      expect(input.value).toBe("Pick a date");
     });
 
 
