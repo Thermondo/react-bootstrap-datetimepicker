@@ -7,7 +7,7 @@
 		exports["ReactBootstrapDatetimepicker"] = factory(require("React"), require("moment"));
 	else
 		root["ReactBootstrapDatetimepicker"] = factory(root["React"], root["moment"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_38__, __WEBPACK_EXTERNAL_MODULE_39__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE_38__, __WEBPACK_EXTERNAL_MODULE_42__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -52,14 +52,14 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(1);
 
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -83,19 +83,23 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _moment = __webpack_require__(39);
+	var _propTypes = __webpack_require__(39);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _moment = __webpack_require__(42);
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _classnames = __webpack_require__(40);
+	var _classnames = __webpack_require__(43);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _DateTimePickerJs = __webpack_require__(41);
+	var _DateTimePickerJs = __webpack_require__(44);
 
 	var _DateTimePickerJs2 = _interopRequireDefault(_DateTimePickerJs);
 
-	var _ConstantsJs = __webpack_require__(51);
+	var _ConstantsJs = __webpack_require__(54);
 
 	var _ConstantsJs2 = _interopRequireDefault(_ConstantsJs);
 
@@ -508,23 +512,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    key: "propTypes",
 	    value: {
-	      dateTime: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.number]),
-	      onChange: _react.PropTypes.func,
-	      onClear: _react.PropTypes.func,
-	      format: _react.PropTypes.string,
-	      inputProps: _react.PropTypes.object,
-	      inputFormat: _react.PropTypes.string,
-	      defaultText: _react.PropTypes.string,
-	      defaultValue: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.number]),
-	      mode: _react.PropTypes.oneOf([_ConstantsJs2["default"].MODE_DATE, _ConstantsJs2["default"].MODE_DATETIME, _ConstantsJs2["default"].MODE_TIME]),
-	      minDate: _react.PropTypes.object,
-	      maxDate: _react.PropTypes.object,
-	      direction: _react.PropTypes.string,
-	      showToday: _react.PropTypes.bool,
-	      viewMode: _react.PropTypes.string,
-	      zIndex: _react.PropTypes.number,
-	      size: _react.PropTypes.oneOf([_ConstantsJs2["default"].SIZE_SMALL, _ConstantsJs2["default"].SIZE_MEDIUM, _ConstantsJs2["default"].SIZE_LARGE]),
-	      daysOfWeekDisabled: _react.PropTypes.arrayOf(_react.PropTypes.number)
+	      dateTime: _propTypes2["default"].oneOfType([_propTypes2["default"].string, _propTypes2["default"].number]),
+	      onChange: _propTypes2["default"].func,
+	      onClear: _propTypes2["default"].func,
+	      format: _propTypes2["default"].string,
+	      inputProps: _propTypes2["default"].object,
+	      inputFormat: _propTypes2["default"].string,
+	      defaultText: _propTypes2["default"].string,
+	      defaultValue: _propTypes2["default"].oneOfType([_propTypes2["default"].string, _propTypes2["default"].number]),
+	      mode: _propTypes2["default"].oneOf([_ConstantsJs2["default"].MODE_DATE, _ConstantsJs2["default"].MODE_DATETIME, _ConstantsJs2["default"].MODE_TIME]),
+	      minDate: _propTypes2["default"].object,
+	      maxDate: _propTypes2["default"].object,
+	      direction: _propTypes2["default"].string,
+	      showToday: _propTypes2["default"].bool,
+	      viewMode: _propTypes2["default"].string,
+	      zIndex: _propTypes2["default"].number,
+	      size: _propTypes2["default"].oneOf([_ConstantsJs2["default"].SIZE_SMALL, _ConstantsJs2["default"].SIZE_MEDIUM, _ConstantsJs2["default"].SIZE_LARGE]),
+	      daysOfWeekDisabled: _propTypes2["default"].arrayOf(_propTypes2["default"].number)
 	    },
 	    enumerable: true
 	  }]);
@@ -535,9 +539,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports["default"] = DateTimeField;
 	module.exports = exports["default"];
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -584,15 +588,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-/***/ },
+/***/ }),
 /* 3 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = { "default": __webpack_require__(4), __esModule: true };
 
-/***/ },
+/***/ }),
 /* 4 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(5);
 	__webpack_require__(6);
@@ -600,9 +604,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return $.getDesc(it, key);
 	};
 
-/***/ },
+/***/ }),
 /* 5 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	var $Object = Object;
 	module.exports = {
@@ -618,9 +622,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  each:       [].forEach
 	};
 
-/***/ },
+/***/ }),
 /* 6 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
 	var toIObject = __webpack_require__(7);
@@ -631,9 +635,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 	});
 
-/***/ },
+/***/ }),
 /* 7 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	// to indexed object, toObject with fallback for non-array-like ES3 strings
 	var IObject = __webpack_require__(8)
@@ -642,9 +646,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return IObject(defined(it));
 	};
 
-/***/ },
+/***/ }),
 /* 8 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	// fallback for non-array-like ES3 and non-enumerable old V8 strings
 	var cof = __webpack_require__(9);
@@ -652,9 +656,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return cof(it) == 'String' ? it.split('') : Object(it);
 	};
 
-/***/ },
+/***/ }),
 /* 9 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	var toString = {}.toString;
 
@@ -662,9 +666,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return toString.call(it).slice(8, -1);
 	};
 
-/***/ },
+/***/ }),
 /* 10 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	// 7.2.1 RequireObjectCoercible(argument)
 	module.exports = function(it){
@@ -672,9 +676,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return it;
 	};
 
-/***/ },
+/***/ }),
 /* 11 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	// most Object methods by ES6 should accept primitives
 	var $export = __webpack_require__(12)
@@ -687,9 +691,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  $export($export.S + $export.F * fails(function(){ fn(1); }), 'Object', exp);
 	};
 
-/***/ },
+/***/ }),
 /* 12 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var global    = __webpack_require__(13)
 	  , core      = __webpack_require__(14)
@@ -738,25 +742,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	$export.W = 32; // wrap
 	module.exports = $export;
 
-/***/ },
+/***/ }),
 /* 13 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
 	var global = module.exports = typeof window != 'undefined' && window.Math == Math
 	  ? window : typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
 	if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
 
-/***/ },
+/***/ }),
 /* 14 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	var core = module.exports = {version: '1.2.6'};
 	if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
 
-/***/ },
+/***/ }),
 /* 15 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	// optional / simple context binding
 	var aFunction = __webpack_require__(16);
@@ -779,18 +783,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 	};
 
-/***/ },
+/***/ }),
 /* 16 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = function(it){
 	  if(typeof it != 'function')throw TypeError(it + ' is not a function!');
 	  return it;
 	};
 
-/***/ },
+/***/ }),
 /* 17 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = function(exec){
 	  try {
@@ -800,9 +804,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	};
 
-/***/ },
+/***/ }),
 /* 18 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -828,45 +832,45 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-/***/ },
+/***/ }),
 /* 19 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = { "default": __webpack_require__(20), __esModule: true };
 
-/***/ },
+/***/ }),
 /* 20 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(5);
 	module.exports = function create(P, D){
 	  return $.create(P, D);
 	};
 
-/***/ },
+/***/ }),
 /* 21 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = { "default": __webpack_require__(22), __esModule: true };
 
-/***/ },
+/***/ }),
 /* 22 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	__webpack_require__(23);
 	module.exports = __webpack_require__(14).Object.setPrototypeOf;
 
-/***/ },
+/***/ }),
 /* 23 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	// 19.1.3.19 Object.setPrototypeOf(O, proto)
 	var $export = __webpack_require__(12);
 	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(24).set});
 
-/***/ },
+/***/ }),
 /* 24 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	// Works with __proto__ only. Old v8 can't work with null proto objects.
 	/* eslint-disable no-proto */
@@ -895,17 +899,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	  check: check
 	};
 
-/***/ },
+/***/ }),
 /* 25 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = function(it){
 	  return typeof it === 'object' ? it !== null : typeof it === 'function';
 	};
 
-/***/ },
+/***/ }),
 /* 26 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(25);
 	module.exports = function(it){
@@ -913,9 +917,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return it;
 	};
 
-/***/ },
+/***/ }),
 /* 27 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -942,24 +946,24 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-/***/ },
+/***/ }),
 /* 28 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = { "default": __webpack_require__(29), __esModule: true };
 
-/***/ },
+/***/ }),
 /* 29 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(5);
 	module.exports = function defineProperty(it, key, desc){
 	  return $.setDesc(it, key, desc);
 	};
 
-/***/ },
+/***/ }),
 /* 30 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	"use strict";
 
@@ -971,9 +975,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-/***/ },
+/***/ }),
 /* 31 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -995,31 +999,31 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-/***/ },
+/***/ }),
 /* 32 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = { "default": __webpack_require__(33), __esModule: true };
 
-/***/ },
+/***/ }),
 /* 33 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	__webpack_require__(34);
 	module.exports = __webpack_require__(14).Object.assign;
 
-/***/ },
+/***/ }),
 /* 34 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	// 19.1.3.1 Object.assign(target, source)
 	var $export = __webpack_require__(12);
 
 	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(35)});
 
-/***/ },
+/***/ }),
 /* 35 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	// 19.1.2.1 Object.assign(target, source, ...)
 	var $        = __webpack_require__(5)
@@ -1055,9 +1059,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return T;
 	} : Object.assign;
 
-/***/ },
+/***/ }),
 /* 36 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	// 7.1.13 ToObject(argument)
 	var defined = __webpack_require__(10);
@@ -1065,9 +1069,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return Object(defined(it));
 	};
 
-/***/ },
+/***/ }),
 /* 37 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	"use strict";
 
@@ -1079,24 +1083,137 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-/***/ },
+/***/ }),
 /* 38 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = __WEBPACK_EXTERNAL_MODULE_38__;
 
-/***/ },
+/***/ }),
 /* 39 */
-/***/ function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __WEBPACK_EXTERNAL_MODULE_39__;
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
 
-/***/ },
+	if (false) {
+	  var ReactIs = require('react-is');
+
+	  // By explicitly using `prop-types` you are opting into new development behavior.
+	  // http://fb.me/prop-types-in-prod
+	  var throwOnDirectAccess = true;
+	  module.exports = require('./factoryWithTypeCheckers')(ReactIs.isElement, throwOnDirectAccess);
+	} else {
+	  // By explicitly using `prop-types` you are opting into new production behavior.
+	  // http://fb.me/prop-types-in-prod
+	  module.exports = __webpack_require__(40)();
+	}
+
+
+/***/ }),
 /* 40 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var ReactPropTypesSecret = __webpack_require__(41);
+
+	function emptyFunction() {}
+	function emptyFunctionWithReset() {}
+	emptyFunctionWithReset.resetWarningCache = emptyFunction;
+
+	module.exports = function() {
+	  function shim(props, propName, componentName, location, propFullName, secret) {
+	    if (secret === ReactPropTypesSecret) {
+	      // It is still safe when called from React.
+	      return;
+	    }
+	    var err = new Error(
+	      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+	      'Use PropTypes.checkPropTypes() to call them. ' +
+	      'Read more at http://fb.me/use-check-prop-types'
+	    );
+	    err.name = 'Invariant Violation';
+	    throw err;
+	  };
+	  shim.isRequired = shim;
+	  function getShim() {
+	    return shim;
+	  };
+	  // Important!
+	  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
+	  var ReactPropTypes = {
+	    array: shim,
+	    bool: shim,
+	    func: shim,
+	    number: shim,
+	    object: shim,
+	    string: shim,
+	    symbol: shim,
+
+	    any: shim,
+	    arrayOf: getShim,
+	    element: shim,
+	    elementType: shim,
+	    instanceOf: getShim,
+	    node: shim,
+	    objectOf: getShim,
+	    oneOf: getShim,
+	    oneOfType: getShim,
+	    shape: getShim,
+	    exact: getShim,
+
+	    checkPropTypes: emptyFunctionWithReset,
+	    resetWarningCache: emptyFunction
+	  };
+
+	  ReactPropTypes.PropTypes = ReactPropTypes;
+
+	  return ReactPropTypes;
+	};
+
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+	module.exports = ReactPropTypesSecret;
+
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports) {
+
+	module.exports = __WEBPACK_EXTERNAL_MODULE_42__;
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-	  Copyright (c) 2016 Jed Watson.
+	  Copyright (c) 2017 Jed Watson.
 	  Licensed under the MIT License (MIT), see
 	  http://jedwatson.github.io/classnames
 	*/
@@ -1118,8 +1235,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 				if (argType === 'string' || argType === 'number') {
 					classes.push(arg);
-				} else if (Array.isArray(arg)) {
-					classes.push(classNames.apply(null, arg));
+				} else if (Array.isArray(arg) && arg.length) {
+					var inner = classNames.apply(null, arg);
+					if (inner) {
+						classes.push(inner);
+					}
 				} else if (argType === 'object') {
 					for (var key in arg) {
 						if (hasOwn.call(arg, key) && arg[key]) {
@@ -1133,6 +1253,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		}
 
 		if (typeof module !== 'undefined' && module.exports) {
+			classNames.default = classNames;
 			module.exports = classNames;
 		} else if (true) {
 			// register as 'classnames', consistent with npm package name
@@ -1145,9 +1266,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	}());
 
 
-/***/ },
-/* 41 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -1169,19 +1290,23 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(40);
+	var _propTypes = __webpack_require__(39);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _classnames = __webpack_require__(43);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _DateTimePickerDateJs = __webpack_require__(42);
+	var _DateTimePickerDateJs = __webpack_require__(45);
 
 	var _DateTimePickerDateJs2 = _interopRequireDefault(_DateTimePickerDateJs);
 
-	var _DateTimePickerTimeJs = __webpack_require__(49);
+	var _DateTimePickerTimeJs = __webpack_require__(52);
 
 	var _DateTimePickerTimeJs2 = _interopRequireDefault(_DateTimePickerTimeJs);
 
-	var _ConstantsJs = __webpack_require__(51);
+	var _ConstantsJs = __webpack_require__(54);
 
 	var _ConstantsJs2 = _interopRequireDefault(_ConstantsJs);
 
@@ -1275,36 +1400,36 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }], [{
 	    key: "propTypes",
 	    value: {
-	      showDatePicker: _react.PropTypes.bool,
-	      showTimePicker: _react.PropTypes.bool,
-	      subtractMonth: _react.PropTypes.func.isRequired,
-	      addMonth: _react.PropTypes.func.isRequired,
-	      viewDate: _react.PropTypes.object.isRequired,
-	      selectedDate: _react.PropTypes.object.isRequired,
-	      showToday: _react.PropTypes.bool,
-	      viewMode: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.number]),
-	      mode: _react.PropTypes.oneOf([_ConstantsJs2["default"].MODE_DATE, _ConstantsJs2["default"].MODE_DATETIME, _ConstantsJs2["default"].MODE_TIME]),
-	      calendarWeeks: _react.PropTypes.bool,
-	      daysOfWeekDisabled: _react.PropTypes.array,
-	      setSelectedDate: _react.PropTypes.func.isRequired,
-	      subtractYear: _react.PropTypes.func.isRequired,
-	      addYear: _react.PropTypes.func.isRequired,
-	      setViewMonth: _react.PropTypes.func.isRequired,
-	      setViewYear: _react.PropTypes.func.isRequired,
-	      subtractHour: _react.PropTypes.func.isRequired,
-	      addHour: _react.PropTypes.func.isRequired,
-	      subtractMinute: _react.PropTypes.func.isRequired,
-	      addMinute: _react.PropTypes.func.isRequired,
-	      addDecade: _react.PropTypes.func.isRequired,
-	      subtractDecade: _react.PropTypes.func.isRequired,
-	      togglePeriod: _react.PropTypes.func.isRequired,
-	      minDate: _react.PropTypes.object,
-	      maxDate: _react.PropTypes.object,
-	      widgetClasses: _react.PropTypes.object,
-	      widgetStyle: _react.PropTypes.object,
-	      togglePicker: _react.PropTypes.func,
-	      setSelectedHour: _react.PropTypes.func,
-	      setSelectedMinute: _react.PropTypes.func
+	      showDatePicker: _propTypes2["default"].bool,
+	      showTimePicker: _propTypes2["default"].bool,
+	      subtractMonth: _propTypes2["default"].func.isRequired,
+	      addMonth: _propTypes2["default"].func.isRequired,
+	      viewDate: _propTypes2["default"].object.isRequired,
+	      selectedDate: _propTypes2["default"].object.isRequired,
+	      showToday: _propTypes2["default"].bool,
+	      viewMode: _propTypes2["default"].oneOfType([_propTypes2["default"].string, _propTypes2["default"].number]),
+	      mode: _propTypes2["default"].oneOf([_ConstantsJs2["default"].MODE_DATE, _ConstantsJs2["default"].MODE_DATETIME, _ConstantsJs2["default"].MODE_TIME]),
+	      calendarWeeks: _propTypes2["default"].bool,
+	      daysOfWeekDisabled: _propTypes2["default"].array,
+	      setSelectedDate: _propTypes2["default"].func.isRequired,
+	      subtractYear: _propTypes2["default"].func.isRequired,
+	      addYear: _propTypes2["default"].func.isRequired,
+	      setViewMonth: _propTypes2["default"].func.isRequired,
+	      setViewYear: _propTypes2["default"].func.isRequired,
+	      subtractHour: _propTypes2["default"].func.isRequired,
+	      addHour: _propTypes2["default"].func.isRequired,
+	      subtractMinute: _propTypes2["default"].func.isRequired,
+	      addMinute: _propTypes2["default"].func.isRequired,
+	      addDecade: _propTypes2["default"].func.isRequired,
+	      subtractDecade: _propTypes2["default"].func.isRequired,
+	      togglePeriod: _propTypes2["default"].func.isRequired,
+	      minDate: _propTypes2["default"].object,
+	      maxDate: _propTypes2["default"].object,
+	      widgetClasses: _propTypes2["default"].object,
+	      widgetStyle: _propTypes2["default"].object,
+	      togglePicker: _propTypes2["default"].func,
+	      setSelectedHour: _propTypes2["default"].func,
+	      setSelectedMinute: _propTypes2["default"].func
 	    },
 	    enumerable: true
 	  }]);
@@ -1315,9 +1440,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports["default"] = DateTimePicker;
 	module.exports = exports["default"];
 
-/***/ },
-/* 42 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -1329,7 +1454,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _classCallCheck = __webpack_require__(30)["default"];
 
-	var _Object$keys = __webpack_require__(43)["default"];
+	var _Object$keys = __webpack_require__(46)["default"];
 
 	var _interopRequireDefault = __webpack_require__(37)["default"];
 
@@ -1341,15 +1466,19 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DateTimePickerDays = __webpack_require__(46);
+	var _propTypes = __webpack_require__(39);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _DateTimePickerDays = __webpack_require__(49);
 
 	var _DateTimePickerDays2 = _interopRequireDefault(_DateTimePickerDays);
 
-	var _DateTimePickerMonths = __webpack_require__(47);
+	var _DateTimePickerMonths = __webpack_require__(50);
 
 	var _DateTimePickerMonths2 = _interopRequireDefault(_DateTimePickerMonths);
 
-	var _DateTimePickerYears = __webpack_require__(48);
+	var _DateTimePickerYears = __webpack_require__(51);
 
 	var _DateTimePickerYears2 = _interopRequireDefault(_DateTimePickerYears);
 
@@ -1359,23 +1488,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(DateTimePickerDate, null, [{
 	    key: "propTypes",
 	    value: {
-	      subtractMonth: _react.PropTypes.func.isRequired,
-	      addMonth: _react.PropTypes.func.isRequired,
-	      viewDate: _react.PropTypes.object.isRequired,
-	      selectedDate: _react.PropTypes.object.isRequired,
-	      showToday: _react.PropTypes.bool,
-	      viewMode: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.number]),
-	      calendarWeeks: _react.PropTypes.bool,
-	      daysOfWeekDisabled: _react.PropTypes.array,
-	      setSelectedDate: _react.PropTypes.func.isRequired,
-	      subtractYear: _react.PropTypes.func.isRequired,
-	      addYear: _react.PropTypes.func.isRequired,
-	      setViewMonth: _react.PropTypes.func.isRequired,
-	      setViewYear: _react.PropTypes.func.isRequired,
-	      addDecade: _react.PropTypes.func.isRequired,
-	      subtractDecade: _react.PropTypes.func.isRequired,
-	      minDate: _react.PropTypes.object,
-	      maxDate: _react.PropTypes.object
+	      subtractMonth: _propTypes2["default"].func.isRequired,
+	      addMonth: _propTypes2["default"].func.isRequired,
+	      viewDate: _propTypes2["default"].object.isRequired,
+	      selectedDate: _propTypes2["default"].object.isRequired,
+	      showToday: _propTypes2["default"].bool,
+	      viewMode: _propTypes2["default"].oneOfType([_propTypes2["default"].string, _propTypes2["default"].number]),
+	      calendarWeeks: _propTypes2["default"].bool,
+	      daysOfWeekDisabled: _propTypes2["default"].array,
+	      setSelectedDate: _propTypes2["default"].func.isRequired,
+	      subtractYear: _propTypes2["default"].func.isRequired,
+	      addYear: _propTypes2["default"].func.isRequired,
+	      setViewMonth: _propTypes2["default"].func.isRequired,
+	      setViewYear: _propTypes2["default"].func.isRequired,
+	      addDecade: _propTypes2["default"].func.isRequired,
+	      subtractDecade: _propTypes2["default"].func.isRequired,
+	      minDate: _propTypes2["default"].object,
+	      maxDate: _propTypes2["default"].object
 	    },
 	    enumerable: true
 	  }]);
@@ -1505,22 +1634,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports["default"] = DateTimePickerDate;
 	module.exports = exports["default"];
 
-/***/ },
-/* 43 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(44), __esModule: true };
+	module.exports = { "default": __webpack_require__(47), __esModule: true };
 
-/***/ },
-/* 44 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
 
-	__webpack_require__(45);
+	__webpack_require__(48);
 	module.exports = __webpack_require__(14).Object.keys;
 
-/***/ },
-/* 45 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 Object.keys(O)
 	var toObject = __webpack_require__(36);
@@ -1531,9 +1660,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 	});
 
-/***/ },
-/* 46 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -1555,11 +1684,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _moment = __webpack_require__(39);
+	var _propTypes = __webpack_require__(39);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _moment = __webpack_require__(42);
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _classnames = __webpack_require__(40);
+	var _classnames = __webpack_require__(43);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -1694,17 +1827,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }], [{
 	    key: "propTypes",
 	    value: {
-	      subtractMonth: _react.PropTypes.func.isRequired,
-	      addMonth: _react.PropTypes.func.isRequired,
-	      viewDate: _react.PropTypes.object.isRequired,
-	      selectedDate: _react.PropTypes.object.isRequired,
-	      showToday: _react.PropTypes.bool,
-	      calendarWeeks: _react.PropTypes.bool,
-	      daysOfWeekDisabled: _react.PropTypes.array,
-	      setSelectedDate: _react.PropTypes.func.isRequired,
-	      showMonths: _react.PropTypes.func.isRequired,
-	      minDate: _react.PropTypes.object,
-	      maxDate: _react.PropTypes.object
+	      subtractMonth: _propTypes2["default"].func.isRequired,
+	      addMonth: _propTypes2["default"].func.isRequired,
+	      viewDate: _propTypes2["default"].object.isRequired,
+	      selectedDate: _propTypes2["default"].object.isRequired,
+	      showToday: _propTypes2["default"].bool,
+	      calendarWeeks: _propTypes2["default"].bool,
+	      daysOfWeekDisabled: _propTypes2["default"].array,
+	      setSelectedDate: _propTypes2["default"].func.isRequired,
+	      showMonths: _propTypes2["default"].func.isRequired,
+	      minDate: _propTypes2["default"].object,
+	      maxDate: _propTypes2["default"].object
 	    },
 	    enumerable: true
 	  }, {
@@ -1721,9 +1854,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports["default"] = DateTimePickerDays;
 	module.exports = exports["default"];
 
-/***/ },
-/* 47 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -1745,11 +1878,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(40);
+	var _propTypes = __webpack_require__(39);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _classnames = __webpack_require__(43);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _moment = __webpack_require__(39);
+	var _moment = __webpack_require__(42);
 
 	var _moment2 = _interopRequireDefault(_moment);
 
@@ -1836,12 +1973,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }], [{
 	    key: "propTypes",
 	    value: {
-	      subtractYear: _react.PropTypes.func.isRequired,
-	      addYear: _react.PropTypes.func.isRequired,
-	      viewDate: _react.PropTypes.object.isRequired,
-	      selectedDate: _react.PropTypes.object.isRequired,
-	      showYears: _react.PropTypes.func.isRequired,
-	      setViewMonth: _react.PropTypes.func.isRequired
+	      subtractYear: _propTypes2["default"].func.isRequired,
+	      addYear: _propTypes2["default"].func.isRequired,
+	      viewDate: _propTypes2["default"].object.isRequired,
+	      selectedDate: _propTypes2["default"].object.isRequired,
+	      showYears: _propTypes2["default"].func.isRequired,
+	      setViewMonth: _propTypes2["default"].func.isRequired
 	    },
 	    enumerable: true
 	  }]);
@@ -1852,9 +1989,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports["default"] = DateTimePickerMonths;
 	module.exports = exports["default"];
 
-/***/ },
-/* 48 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -1876,7 +2013,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(40);
+	var _propTypes = __webpack_require__(39);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _classnames = __webpack_require__(43);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -1969,11 +2110,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }], [{
 	    key: "propTypes",
 	    value: {
-	      subtractDecade: _react.PropTypes.func.isRequired,
-	      addDecade: _react.PropTypes.func.isRequired,
-	      viewDate: _react.PropTypes.object.isRequired,
-	      selectedDate: _react.PropTypes.object.isRequired,
-	      setViewYear: _react.PropTypes.func.isRequired
+	      subtractDecade: _propTypes2["default"].func.isRequired,
+	      addDecade: _propTypes2["default"].func.isRequired,
+	      viewDate: _propTypes2["default"].object.isRequired,
+	      selectedDate: _propTypes2["default"].object.isRequired,
+	      setViewYear: _propTypes2["default"].func.isRequired
 	    },
 	    enumerable: true
 	  }]);
@@ -1984,9 +2125,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports["default"] = DateTimePickerYears;
 	module.exports = exports["default"];
 
-/***/ },
-/* 49 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -2010,15 +2151,19 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DateTimePickerMinutes = __webpack_require__(50);
+	var _propTypes = __webpack_require__(39);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _DateTimePickerMinutes = __webpack_require__(53);
 
 	var _DateTimePickerMinutes2 = _interopRequireDefault(_DateTimePickerMinutes);
 
-	var _DateTimePickerHours = __webpack_require__(52);
+	var _DateTimePickerHours = __webpack_require__(55);
 
 	var _DateTimePickerHours2 = _interopRequireDefault(_DateTimePickerHours);
 
-	var _ConstantsJs = __webpack_require__(51);
+	var _ConstantsJs = __webpack_require__(54);
 
 	var _ConstantsJs2 = _interopRequireDefault(_ConstantsJs);
 
@@ -2181,16 +2326,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }], [{
 	    key: "propTypes",
 	    value: {
-	      setSelectedHour: _react.PropTypes.func.isRequired,
-	      setSelectedMinute: _react.PropTypes.func.isRequired,
-	      subtractHour: _react.PropTypes.func.isRequired,
-	      addHour: _react.PropTypes.func.isRequired,
-	      subtractMinute: _react.PropTypes.func.isRequired,
-	      addMinute: _react.PropTypes.func.isRequired,
-	      viewDate: _react.PropTypes.object.isRequired,
-	      selectedDate: _react.PropTypes.object.isRequired,
-	      togglePeriod: _react.PropTypes.func.isRequired,
-	      mode: _react.PropTypes.oneOf([_ConstantsJs2["default"].MODE_DATE, _ConstantsJs2["default"].MODE_DATETIME, _ConstantsJs2["default"].MODE_TIME])
+	      setSelectedHour: _propTypes2["default"].func.isRequired,
+	      setSelectedMinute: _propTypes2["default"].func.isRequired,
+	      subtractHour: _propTypes2["default"].func.isRequired,
+	      addHour: _propTypes2["default"].func.isRequired,
+	      subtractMinute: _propTypes2["default"].func.isRequired,
+	      addMinute: _propTypes2["default"].func.isRequired,
+	      viewDate: _propTypes2["default"].object.isRequired,
+	      selectedDate: _propTypes2["default"].object.isRequired,
+	      togglePeriod: _propTypes2["default"].func.isRequired,
+	      mode: _propTypes2["default"].oneOf([_ConstantsJs2["default"].MODE_DATE, _ConstantsJs2["default"].MODE_DATETIME, _ConstantsJs2["default"].MODE_TIME])
 	    },
 	    enumerable: true
 	  }]);
@@ -2203,9 +2348,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = DateTimePickerTime;
 	module.exports = exports["default"];
 
-/***/ },
-/* 50 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -2227,7 +2372,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ConstantsJs = __webpack_require__(51);
+	var _propTypes = __webpack_require__(39);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _ConstantsJs = __webpack_require__(54);
 
 	var _ConstantsJs2 = _interopRequireDefault(_ConstantsJs);
 
@@ -2350,9 +2499,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }], [{
 	    key: "propTypes",
 	    value: {
-	      setSelectedMinute: _react.PropTypes.func.isRequired,
-	      onSwitch: _react.PropTypes.func.isRequired,
-	      mode: _react.PropTypes.string.isRequired
+	      setSelectedMinute: _propTypes2["default"].func.isRequired,
+	      onSwitch: _propTypes2["default"].func.isRequired,
+	      mode: _propTypes2["default"].string.isRequired
 	    },
 	    enumerable: true
 	  }]);
@@ -2363,9 +2512,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports["default"] = DateTimePickerMinutes;
 	module.exports = exports["default"];
 
-/***/ },
-/* 51 */
-/***/ function(module, exports) {
+/***/ }),
+/* 54 */
+/***/ (function(module, exports) {
 
 	"use strict";
 
@@ -2379,9 +2528,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    SIZE_LARGE: "lg"
 	};
 
-/***/ },
-/* 52 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -2403,7 +2552,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ConstantsJs = __webpack_require__(51);
+	var _propTypes = __webpack_require__(39);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _ConstantsJs = __webpack_require__(54);
 
 	var _ConstantsJs2 = _interopRequireDefault(_ConstantsJs);
 
@@ -2598,9 +2751,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }], [{
 	    key: "propTypes",
 	    value: {
-	      setSelectedHour: _react.PropTypes.func.isRequired,
-	      onSwitch: _react.PropTypes.func.isRequired,
-	      mode: _react.PropTypes.string.isRequired
+	      setSelectedHour: _propTypes2["default"].func.isRequired,
+	      onSwitch: _propTypes2["default"].func.isRequired,
+	      mode: _propTypes2["default"].string.isRequired
 	    },
 	    enumerable: true
 	  }]);
@@ -2611,7 +2764,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports["default"] = DateTimePickerHours;
 	module.exports = exports["default"];
 
-/***/ }
+/***/ })
 /******/ ])
 });
 ;
